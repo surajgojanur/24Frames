@@ -44,7 +44,7 @@ def text():
 
     if request.method == "POST":
         input_text = request.form.get("text")
-
+        
         if input_text:
             # Using generative AI model to generate content
             model = genai.GenerativeModel(model_name="gemini-pro")
